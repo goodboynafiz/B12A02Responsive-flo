@@ -7,9 +7,12 @@
 }
 /* shared styles */
 .all-product{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.sample-img{
+    width: 100%;
 }
 .buy-now{
     gap: 20px;
@@ -106,6 +109,19 @@ color: #FFFFFF;
 .our-plants{
     text-align: center;
 }
+.product-description{
+    font-weight: 400px; 
+    font-size: 1.4rem;
+    color:rgba(0, 0, 0, 0.5);
+}
+.products{
+    text-align: center;
+}
+.my-products{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
 
 /* responsive for different device */
 @media screen and (max-width:576px) {
@@ -128,4 +144,21 @@ color: #FFFFFF;
     .bunch-of-flowers{
         order: -1;
     }
+  .all-product{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+  }
+  .my-products{
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .products{
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+  }
 }
