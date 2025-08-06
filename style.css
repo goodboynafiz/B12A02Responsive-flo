@@ -12,6 +12,11 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.logo-img{
+    margin-left: 150px;
 }
 .nav-links{
     display: flex;
@@ -34,4 +39,51 @@
 }
 .dark-c{
     color: #000000;
+}
+.bunch-of-flowers{ 
+    width: 100%;
+}
+/* banner */
+.about-our-shop{
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 150px;
+}
+.about{
+    font-weight: 800px;
+    font-size: 2rem;
+}
+.yellow{
+    color: #E95A08;
+}
+.importance-of-flower{
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+
+
+
+/* responsive for different device */
+@media screen and (max-width:576px) {
+    .dark-home,
+    .dark-s
+    {
+        display: none;
+    }
+    .logo-img{
+        margin: 0px;
+    }
+    .about-our-shop{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    .why-we{
+        text-align: center;
+    }
+    .bunch-of-flowers{
+        order: -1;
+    }
 }
