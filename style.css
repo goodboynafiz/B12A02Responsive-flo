@@ -51,6 +51,14 @@ width: 270px;
 height: 50px;
 color: #FFFFFF;
 }
+.image{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+ /* .exclucive-plants{
+    width: 100%;
+ } */
 /* nav styles */
 .nav-bar{
     display: flex;
@@ -154,6 +162,65 @@ color: #FFFFFF;
     margin-top: 120px;
     margin-bottom: 130px;
 }
+/* exclusive plants */
+.exclucive-plants{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:1fr 1fr  ;
+   margin-right: 150px;
+   margin-left: 150px;
+    /* margin-top: 120px;
+    margin-bottom: 120px;
+    padding-bottom: 120px; */
+
+    
+} 
+.ana-img{
+
+transform:scaleY(-1);
+opacity: .5px;
+mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4), trnsparent);
+-webkit-mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4),trnsparent);
+}
+.over-image{
+    position: relative;
+}
+.input-field{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    
+}
+.input-sub{
+    display: flex;
+   
+}
+.subscribe-btn{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    width: 186px;
+    height: 50px;
+    
+}
+.input{
+    font-weight: 400px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    width: 644px;
+    height: 50px;
+    border: none;
+    
+}
+#input-title{
+    font-weight: 800px;
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
+.over-image{
+    width: 100%;
+}
 /* responsive for different device */
 @media screen and (max-width:576px) {
     .dark-home,
@@ -164,7 +231,8 @@ color: #FFFFFF;
     .logo-img{
         margin: 0px;
     }
-    .about-our-shop,.plants-lover{
+    .about-our-shop,.plants-lover
+    {
         flex-direction: column;
         align-items: center;
         margin: 0px;
@@ -200,4 +268,43 @@ color: #FFFFFF;
     margin: 20px 30px;
     align-items: center;
   }
+.exclucive-plants{
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px;
+}
+.over-image{
+    position: relative;
+}
+.input-field{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    
+}
+.input-sub{
+    display: flex;
+   
+}
+.subscribe-btn{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    width: 11.635rem;
+    height: 2.2rem;
+    
+}
+.input{
+    font-weight: 400px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    width: 40.25rem;
+    height: 2.2rem;
+    border: none;
+    
+}
+#input-title{
+    font-weight: 800px;
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
 }
